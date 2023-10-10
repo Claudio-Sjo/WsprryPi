@@ -53,6 +53,9 @@ using namespace std;
 #ifdef RPI23
 #define F_PLLD_CLK (500000000.0)
 #endif
+#ifdef RPI1
+#define F_PLLD_CLK   (500000000.0*(1-2.500e-6))
+#endif
 #endif
 
 // Choose proper base address depending on RPI1/RPI2 setting from makefile.
